@@ -75,7 +75,7 @@ void test12()
    {int pos = dyn.writeStrI(s1);
      printf("%d pos=%d\n",i,pos);}
    cout << "cont= " << dyn;
-   cout << "ОБЩЕЕ КОЛИЧЕСТВО СТРОК В КОНТЕЙНЕРЕ: " << dyn.getM() << endl;
+   cout << "TOTAL NUMBER OF LINES IN THE CONTAINER: " << dyn.getM() << endl;
     } catch(...) {
       cout << "error" <<endl;
     }
@@ -85,13 +85,13 @@ void test13()
     try{
   cout << "\ntest13. user_input()\n";
    Container dyn; int n;
-   cout << "Сколько строк введем? ";
+   cout << "How many string? ";
    cin >> n;
    for(int i = 0;i < n + 1; i++)
-   {cout << "Введите строку: ";
+   {cout << "Input string: ";
    cin >> dyn;}
    cout << "cont= " << dyn;
-   cout << "ОБЩЕЕ КОЛИЧЕСТВО СТРОК В КОНТЕЙНЕРЕ: " << dyn.getM() << endl;
+   cout << "TOTAL NUMBER OF LINES IN THE CONTAINER " << dyn.getM() << endl;
     } catch(...) {cout << "error" << endl;}
 }
 ///////////////////////////////////////////
