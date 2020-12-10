@@ -335,7 +335,7 @@ template<class T> void CList2<T>::AddBefore(const T &x){
 
 char *user_input()
 {
-    char str(100);
+    char str[100];
     int ch;
     size_t len = 0;
 
