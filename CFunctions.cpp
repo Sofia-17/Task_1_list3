@@ -335,11 +335,11 @@ template<class T> void CList2<T>::AddBefore(const T &x){
 
 char *user_input()
 {
-    char *str;
+    char str(100);
     int ch;
     size_t len = 0;
 
-    str = new char[100];
+    //str = new char[100];
     if(!str)return str;
     while(EOF!=(ch=fgetc(stdin)) && ch != '\n'){
         str[len++]=ch;
